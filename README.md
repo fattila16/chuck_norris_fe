@@ -1,30 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a [Next.js](https://nextjs.org/) SPA to interact with [https://api.chucknorris.io/].
 
-## Getting Started
+## Project Architecture
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
+This project is bootsrapped with `npx create-next-app`. The project is structured like a typical [Next.js] application.
+```
+├── README.md
+├── cypress
+│   ├── eslint.rc.json
+│   ├── integration -> Integration tests
+│   ├── screenshots
+│   ├── tsconfig.json
+│   └── videos
+├── cypress.json
+├── jest.config.js
+├── next-env.d.ts
+├── package-lock.json
+├── package.json
+├── pages -> Pages, app routes
+│   ├── __tests__
+│   └── index.tsx
+├── public
+│   └── css
+├── setupTest.ts
+├── src
+│   ├── assets -> Assets for the UI components
+│   ├── components -> UI components
+│   ├── hooks -> Custom hooks for the business logic
+│   └── pages -> Page layout components.
+├── state -> Business logic for the state.
+├── tsconfig.json
+└── typings -> TS types.
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+I use [Zustand](https://github.com/react-spring/zustand) as a global state management library. Because the app logic is quite simple I don't need a heavy lifter dependency like [Redux](https://github.com/reduxjs/redux) or [Mobx](https://mobx.js.org/README.html).
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+I use [useSWR](https://github.com/vercel/swr) to handle remote data fetching. This way I can utilize response caching, and have a smoother and faster experience.
 
-## Learn More
+I use [Sass](https://sass-lang.com/) mixins to create LTR and [RTL](https://en.wikipedia.org/wiki/Right-to-left) styled components.
 
-To learn more about Next.js, take a look at the following resources:
+## Getting started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Installing
 
-## Deploy on Vercel
+Before you are able to run the web app, please install the dependencies.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+npm install
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Running in development
+
+You can run the development version of the app via the following command:
+
+```
+npm run dev
+```
+
+## Testing
+
+The project includes automated testing solutions. I choose [Jest](https://jestjs.io/) and [Enzyme](https://github.com/enzymejs/enzyme) for unit testing, and [Cypress](https://www.cypress.io/) for end-to-end testing
+
+### Running the unit tests:
+
+You can operate with the unit testing framework via the following commands:
+
+```
+npm run test:unit -> Runs Jest
+npm run test:unit:watch -> Runs Jest in watch mode
+npm run test:unit:coverage -> Runs Jest with code coverage statistics
+```
+
+You can operate with the e2e testing framework via the following commands:
+
+```
+npm run test:e2e -> Runs cypress in headless mode.
+npm run test:e2e:ui -> Runs cypress with UI mode.
+```
+
+## Coding style
+
+I use Eslint for code-linting, and the recommended rulesets for React/Typscript/Hooks etc...
+
+## How to deploy
+
+I use Vercel for live deployment.
+
