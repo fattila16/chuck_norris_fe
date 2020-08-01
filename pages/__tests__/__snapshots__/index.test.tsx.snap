@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[HomePage] Should render HomePage component without error 1`] = `
+Array [
+  <React.Fragment>
+    Hello Chuck Norris Facts.
+  </React.Fragment>,
+]
+`;
