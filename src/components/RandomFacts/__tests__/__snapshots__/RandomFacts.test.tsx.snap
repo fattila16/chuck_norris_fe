@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[RandomFacts] Should render RandomFacts component without error 1`] = `
+Array [
+  <React.Fragment>
+    <section
+      className="container"
+    >
+      <h2 />
+      <div
+        className="button"
+      >
+        <Button
+          onClick={[Function]}
+          size="medium"
+          title="Another one"
+        />
+      </div>
+    </section>
+  </React.Fragment>,
+]
+`;

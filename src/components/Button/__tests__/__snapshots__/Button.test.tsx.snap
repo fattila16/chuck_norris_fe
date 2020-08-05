@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Button] Should render Button component without error 1`] = `
+Array [
+  <button
+    className="button medium"
+  />,
+]
+`;

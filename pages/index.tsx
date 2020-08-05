@@ -1,7 +1,12 @@
 import React from 'react';
+import HomePage from '../src/pages/HomePage/HomePage';
 
-const HomePage: React.FC = () => {
-    return <>Hello Chuck Norris Facts.</>;
+const Index: React.FC = () => {
+    return (
+        <>
+            <HomePage />
+        </>
+    );
 };
 
-export default HomePage;
+export default Index;
