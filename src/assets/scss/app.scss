@@ -1,0 +1,27 @@
+@import 'src/assets/scss/vars';
+@import 'src/assets/scss/color-palette';
+
+* {
+    font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+svg {
+    overflow: visible;
+}
+
+html, body {
+    background-color: map-get($active-theme, silk);
+}
+
+// https://github.com/zeit/next.js/issues/5291
+main {
+    padding: 10px;
+    margin: $navbar-height 120px 0px 120px;
+}
+
+@media screen and (max-width: $mobile-breakpoint) {
+    .main {
+        margin-top: $navbar-height-mobile;
+    }
+}

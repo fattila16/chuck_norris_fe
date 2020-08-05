@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ToggleSwitch] Should render ToggleSwitch component without error 1`] = `
+Array [
+  <React.Fragment>
+    <input
+      className="input"
+      id="switch"
+      type="checkbox"
+    />
+    <label
+      className="label"
+      htmlFor="switch"
+    >
+      <span>
+        LTR
+      </span>
+    </label>
+  </React.Fragment>,
+]
+`;

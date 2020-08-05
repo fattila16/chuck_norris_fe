@@ -1,6 +1,9 @@
 module.exports = {
     roots: ['<rootDir>'],
     moduleFileExtensions: ['js', 'ts', 'tsx', 'json'],
+    moduleNameMapper: {
+        '\\.(scss|less)$': 'identity-obj-proxy',
+    },
     setupFiles: ['<rootDir>/setupTest.ts'],
     testPathIgnorePatterns: ['<rootDir>[/\\\\](build|docs|node_modules|.next|cypress)[/\\\\]'],
     transformIgnorePatterns: ['[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$'],

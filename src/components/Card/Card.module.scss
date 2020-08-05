@@ -1,0 +1,46 @@
+@import 'src/assets/scss/color-palette';
+@import 'src/assets/scss/vars';
+
+.card {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    text-decoration: none;
+    border-radius:5px;
+    height: 300px;
+    max-width: 300px;
+    width: 100%;
+    box-shadow:0px 4px 18px rgba(0,0,0,0.1);
+    background-color: white;
+    transition: all 0.2s ease;
+    &:hover {
+        transform: translateY(-1px);
+        box-shadow:0px 4px 18px rgba(0,0,0,0.2);
+    }
+}
+
+.image {
+    width: 100%;
+    height: 60%;
+    border-radius: 5px 5px 0 0;
+    object-fit: contain;
+    display: block;
+}
+
+.fact {
+    font-size: 16px;
+    padding: 0px 18px 18px 18px;
+    max-width: 300px;
+    max-height: 150px;
+    overflow-x: hidden;
+}
+
+.ul {
+    list-style-type: none;
+    align-self: start;
+    display: flex;
+    span {
+        padding-right: 10px;
+    }
+}

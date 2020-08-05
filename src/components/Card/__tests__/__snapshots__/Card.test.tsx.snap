@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Card] Should render Card component without error 1`] = `
+Array [
+  <div
+    className="card"
+  >
+    <img
+      alt="chuck-fact-card"
+      className="image"
+      src=""
+    />
+    <ul
+      className="ul"
+    >
+      <span>
+        Categories:
+      </span>
+      <li>
+        testCategory
+      </li>
+    </ul>
+    <div
+      className="fact"
+    >
+      Test
+    </div>
+  </div>,
+]
+`;
