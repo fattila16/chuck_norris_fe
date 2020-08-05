@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[LinkList] Should render LinkList component without error 1`] = `
+Array [
+  <ul
+    className="ul"
+  >
+    <li>
+      <Link
+        href="/"
+      >
+        <a
+          href="/"
+        >
+          /
+        </a>
+      </Link>
+    </li>
+  </ul>,
+]
+`;

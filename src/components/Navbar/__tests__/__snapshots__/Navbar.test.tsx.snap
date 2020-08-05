@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Navbar] Should render Navbar component without error 1`] = `
+Array [
+  <React.Fragment>
+    <nav
+      className="nav"
+    >
+      <section>
+        <LinkList
+          links={
+            Array [
+              Object {
+                "href": "/categories",
+                "name": "Categories",
+              },
+              Object {
+                "href": "/search",
+                "name": "Search",
+              },
+            ]
+          }
+        />
+      </section>
+      <section>
+        <ToggleSwitch
+          checked={false}
+          onChange={[Function]}
+        />
+      </section>
+    </nav>
+  </React.Fragment>,
+]
+`;

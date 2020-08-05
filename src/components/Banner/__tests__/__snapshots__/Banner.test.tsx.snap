@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Banner] Should render Banner component without error 1`] = `
+Array [
+  <a
+    className="container"
+    href="/"
+  >
+    <img
+      alt="chuck_banner"
+      src="/images/chuck_logo.png"
+    />
+    <h1>
+      Chuck Norris Random Facts
+    </h1>
+  </a>,
+]
+`;

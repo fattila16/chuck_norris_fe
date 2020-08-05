@@ -1,0 +1,18 @@
+@import 'src/assets/scss/color-palette';
+@import 'src/assets/scss/vars';
+
+.ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+    li {
+        list-style-type: none;
+        
+        a {
+            padding: 0px 10px;
+            color: map-get($active-theme, silk );
+            text-decoration: none;
+        }
+    }
+}
