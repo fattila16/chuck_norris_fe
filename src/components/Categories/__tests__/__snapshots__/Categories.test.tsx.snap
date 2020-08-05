@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Categories] Should render Categories component without error 1`] = `
+Array [
+  <section
+    className="container"
+  >
+    <h3>
+      Categories List:
+    </h3>
+    <ul
+      className="ul"
+    />
+    <Button
+      onClick={[Function]}
+      size="medium"
+      title="Clear categories"
+    />
+  </section>,
+]
+`;
