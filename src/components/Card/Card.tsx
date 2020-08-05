@@ -12,12 +12,6 @@ const Card: React.FC<CardProps> = (props: CardProps) => {
     return (
         <div className={css.card}>
             <img className={css.image} src={img} alt="chuck-fact-card" />
-            <ul className={css.ul}>
-                <span>Categories:</span>
-                {categories.map((category) => (
-                    <li key={category}>{category}</li>
-                ))}
-            </ul>
             <div className={css.fact}>{fact}</div>
         </div>
     );

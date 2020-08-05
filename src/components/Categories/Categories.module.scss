@@ -13,6 +13,8 @@
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
+    margin: 0;
+    padding: 0;
     
     button {
         display: grid;
@@ -23,5 +25,18 @@
         color: map-get($active-theme , silk);
         border-radius: 20px;
         cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .ul {
+        margin: 0;
+        padding: 0;
+        grid-template-columns: repeat(2, minmax(80px, 1fr));
+        button {
+            height: 50px;
+            width: 30vw;
+        }
+        margin-bottom: 40px;
     }
 }

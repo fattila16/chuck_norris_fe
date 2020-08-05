@@ -21,7 +21,7 @@ main {
 }
 
 @media screen and (max-width: $mobile-breakpoint) {
-    .main {
-        margin-top: $navbar-height-mobile;
+    main {
+        margin: $navbar-height 20px 0px 20px;
     }
 }

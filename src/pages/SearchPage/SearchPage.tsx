@@ -23,7 +23,6 @@ const SearchPage: React.FC = () => {
         },
         [router],
     );
-    console.log(data);
     if (error) return <>Error</>;
     return (
         <>

@@ -1,4 +1,4 @@
-import { NavbarProps } from './Navbar';
+import { NavbarProps } from './NavbarDefault';
 
 export const NAVBAR_LINKS: NavbarProps = {
     logo: '/',

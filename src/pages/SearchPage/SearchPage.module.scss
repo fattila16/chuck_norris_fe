@@ -1,11 +1,29 @@
+@import 'src/assets/scss/color-palette';
+@import 'src/assets/scss/vars';
+
 .container {
     display: flex;
     flex-direction: column;
     place-items: center;
+    input {
+        width: 40vw;
+    }
 }
 .resultContainer {
     margin-top: 40px;
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+}
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .resultContainer {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+    .container {
+        width: 100%;
+        input {
+            width: 100%;
+        }
+    }
 }

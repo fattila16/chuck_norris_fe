@@ -1,0 +1,35 @@
+@import 'src/assets/scss/color-palette';
+
+.hamburger{
+    cursor: pointer;
+    span{
+        width:30px;
+        height:4px;
+        background: map-get($active-theme, fawn);
+        display:block;
+        transition: all 0.3s ease;
+        &:first-child {
+            transform: translateY(-5px);
+        }
+        &:nth-child(2) {
+            opacity: 1;
+        }
+        &:last-child {
+            transform: translateY(5px);
+        }
+    }
+    &.open {
+        span {
+            &:first-child {
+                transform: translateY(4px) rotate(45deg);
+            }
+            &:nth-child(2) {
+                transform: translateX(30px);
+                opacity: 0;
+            }
+            &:last-child {
+                transform: translateY(-4px) rotate(-45deg);
+            }
+        }
+    }
+}

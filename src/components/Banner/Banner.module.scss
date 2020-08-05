@@ -16,3 +16,17 @@
         width: 15vw;
     }
 }
+
+@media only screen and (max-width: $mobile-breakpoint) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 40vw;
+        }
+        h1 {
+            text-align: center;
+        }
+    }
+}

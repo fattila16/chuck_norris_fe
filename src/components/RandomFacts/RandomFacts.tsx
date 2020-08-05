@@ -6,7 +6,6 @@ import Button from '../Button/Button';
 
 const RandomFacts: React.FC = () => {
     const router = useRouter();
-    console.log(router);
     const { data: randomFact, error, refresh } = useRandom(router?.query?.category);
     if (error) return <>Error</>;
     return (
