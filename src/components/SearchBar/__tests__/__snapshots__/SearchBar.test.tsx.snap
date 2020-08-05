@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SearchBar] Should render SearchBar component without error 1`] = `
+Array [
+  <React.Fragment>
+    <input
+      className="input"
+      type="text"
+    />
+  </React.Fragment>,
+]
+`;

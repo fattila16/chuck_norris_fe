@@ -1,0 +1,12 @@
+@import 'src/assets/scss/color-palette';
+@import 'src/assets/scss/vars';
+
+.input {
+    border: none;
+    background-color: map-get($active-theme , white );
+    font-size: 18px;
+    font-weight: 300;
+    width: 25vw;
+    padding: 10px;
+    border-radius: 20px;
+}
