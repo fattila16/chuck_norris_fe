@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Hamburger] Should render Hamburger with classNames: hamburger open, if open is true 1`] = `
+Array [
+  <div
+    className="hamburger open"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="menu"
+    tabIndex={0}
+  >
+    <span />
+    <span />
+    <span />
+  </div>,
+]
+`;
+
+exports[`[Hamburger] Should render Hamburger with classNames: hamburger, if open is false 1`] = `
+Array [
+  <div
+    className="hamburger "
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    role="menu"
+    tabIndex={0}
+  >
+    <span />
+    <span />
+    <span />
+  </div>,
+]
+`;

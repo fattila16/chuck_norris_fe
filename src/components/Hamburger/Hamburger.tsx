@@ -16,9 +16,9 @@ const Hamburger: React.FC<HamburgerProps> = (props: HamburgerProps) => {
             role="menu"
             tabIndex={0}
         >
-            <span></span>
-            <span></span>
-            <span></span>
+            <span />
+            <span />
+            <span />
         </div>
     );
 };

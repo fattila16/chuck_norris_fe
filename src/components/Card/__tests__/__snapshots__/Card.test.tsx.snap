@@ -10,16 +10,6 @@ Array [
       className="image"
       src=""
     />
-    <ul
-      className="ul"
-    >
-      <span>
-        Categories:
-      </span>
-      <li>
-        testCategory
-      </li>
-    </ul>
     <div
       className="fact"
     >

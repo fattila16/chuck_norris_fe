@@ -30,7 +30,7 @@ const NavbarMobile: React.FC = () => {
             <section className={css.content}>
                 <LinkList links={links} />
                 <span>
-                    <ToggleSwitch onChange={handleToggleSwitch} checked={isChecked} />
+                    <ToggleSwitch onChange={handleToggleSwitch} checked={isChecked} textTrue="RTL" textFalse="LTR" />
                 </span>
             </section>
         </nav>

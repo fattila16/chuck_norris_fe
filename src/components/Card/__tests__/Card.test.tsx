@@ -4,7 +4,7 @@ import Card from '../Card';
 
 describe('[Card]', () => {
     it('Should render Card component without error', () => {
-        const component = shallow(<Card img="" fact="Test" categories={['testCategory']} />);
+        const component = shallow(<Card img="" fact="Test" />);
         expect(component.getElements()).toMatchSnapshot();
     });
 });

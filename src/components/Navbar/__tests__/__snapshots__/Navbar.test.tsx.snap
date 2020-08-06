@@ -3,32 +3,16 @@
 exports[`[Navbar] Should render Navbar component without error 1`] = `
 Array [
   <React.Fragment>
-    <nav
-      className="nav"
+    <div
+      className="default"
     >
-      <section>
-        <LinkList
-          links={
-            Array [
-              Object {
-                "href": "/categories",
-                "name": "Categories",
-              },
-              Object {
-                "href": "/search",
-                "name": "Search",
-              },
-            ]
-          }
-        />
-      </section>
-      <section>
-        <ToggleSwitch
-          checked={false}
-          onChange={[Function]}
-        />
-      </section>
-    </nav>
+      <Navbar />
+    </div>
+    <div
+      className="mobile"
+    >
+      <NavbarMobile />
+    </div>
   </React.Fragment>,
 ]
 `;

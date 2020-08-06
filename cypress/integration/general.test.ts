@@ -5,13 +5,13 @@ describe('General features', () => {
 
     it('Navigates to the Categories page Categories Nagivation Item if clicked', () => {
         cy.visit('localhost:3000');
-        cy.get('a[href="/categories"]').click();
+        cy.get('a[href="/categories"]').first().click();
         cy.url().should('eq', 'http://localhost:3000/categories');
     });
 
     it('Navigates to the Search page if Search Nagivation Item is clicked', () => {
         cy.visit('localhost:3000');
-        cy.get('a[href="/search"]').click();
+        cy.get('a[href="/search"]').first().click();
         cy.url().should('eq', 'http://localhost:3000/search');
     });
 
@@ -23,7 +23,7 @@ describe('General features', () => {
 
     it('Should switch from LTR to RTL if the Toggle is toggled', () => {
         cy.visit('localhost:3000');
-        cy.get('label[for="switch"]').click();
+        cy.get('label[for="switch"]').first().click();
         cy.get('body').invoke('attr', 'dir').should('eq', 'rtl');
     });
 });

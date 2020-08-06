@@ -30,7 +30,7 @@ const SearchPage: React.FC = () => {
                 <SearchBar onChange={handleChange} value={searchQuery} placeHolder="Search for a Chuck Norris Fact" />
                 <div className={css.resultContainer}>
                     {data?.result.map((res: any) => (
-                        <Card key={res.fact} img={res.icon_url} fact={res.value} categories={res.categories} />
+                        <Card key={res.fact} img={res.icon_url} fact={res.value} />
                     ))}
                 </div>
             </section>

@@ -15,7 +15,7 @@
     text-align: center;
 	width: 70px;
 	height: 30px;
-	background: grey;
+	background: map-get($active-theme ,'grey' );;
 	display: block;
 	border-radius: 70px;
     position: relative;
@@ -29,13 +29,13 @@
 	left: 0px;
 	width: 30px;
 	height: 30px;
-	background: #fff;
+	background: map-get($active-theme , silk );
 	border-radius: 30px;
 	transition: 0.3s;
 }
 
 .input:checked + label {
-	background: #bada55;
+	background: map-get($active-theme ,fawn );
 }
 
 .input:checked + label:after {

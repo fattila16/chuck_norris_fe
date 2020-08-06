@@ -1,12 +1,14 @@
 import React from 'react';
-import Banner from '../../components/Banner/Banner';
 import RandomFacts from '../../components/RandomFacts/RandomFacts';
-import Categories from '../../components/Categories/Categories';
+import useRandom from '../../hooks/useRandom';
+import { useRouter } from 'next/router';
 
 const HomePage: React.FC = () => {
+    const router = useRouter();
+    const { data: randomFact, error, refresh } = useRandom(router?.query?.category);
     return (
         <>
-            <RandomFacts />
+            <RandomFacts randomFact={randomFact} error={error} refresh={refresh} />
         </>
     );
 };

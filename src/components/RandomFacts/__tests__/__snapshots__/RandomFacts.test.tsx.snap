@@ -6,12 +6,14 @@ Array [
     <section
       className="container"
     >
-      <h2 />
+      <h2>
+        TestFact
+      </h2>
       <div
         className="button"
       >
         <Button
-          onClick={[Function]}
+          onClick={[MockFunction]}
           size="medium"
           title="Another one"
         />

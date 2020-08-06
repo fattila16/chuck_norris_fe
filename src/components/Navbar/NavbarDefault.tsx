@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
                     <LinkList links={links} />
                 </section>
                 <section>
-                    <ToggleSwitch onChange={handleToggleSwitch} checked={isChecked} />
+                    <ToggleSwitch onChange={handleToggleSwitch} checked={isChecked} textFalse="LTR" textTrue="RTL" />
                 </section>
             </nav>
         </>
