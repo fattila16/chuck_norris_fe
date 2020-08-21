@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) SPA to interact with [https://api.chucknorris.io/].
+This is a [Next.js](https://nextjs.org/) SPA to interact with https://api.chucknorris.io/.
 
 ## Project Architecture
 
@@ -36,7 +36,7 @@ I use [Zustand](https://github.com/react-spring/zustand) as a global state manag
 
 I use [useSWR](https://github.com/vercel/swr) to handle remote data fetching. This way I can utilize response caching, and have a smoother and faster experience.
 
-I use [Sass](https://sass-lang.com/) mixins to create LTR and [RTL](https://en.wikipedia.org/wiki/Right-to-left) styled components.
+I use a [PostCSS](https://www.npmjs.com/package/postcss-rtl) plugin create LTR and [RTL](https://en.wikipedia.org/wiki/Right-to-left) styled components.
 
 ## Getting started
 
@@ -86,4 +86,5 @@ I use Eslint for code-linting, and the recommended rulesets for React/Typscript/
 ## How to deploy
 
 I use Vercel for live deployment.
+link: (https://www.chuck-norris-fe-delta.vercel.app)
 
