@@ -86,5 +86,5 @@ I use Eslint for code-linting, and the recommended rulesets for React/Typscript/
 ## How to deploy
 
 I use Vercel for live deployment.
-link: (https://www.chuck-norris-fe-delta.vercel.app)
+link: (https://chuck-norris-fe-delta.vercel.app)
 
